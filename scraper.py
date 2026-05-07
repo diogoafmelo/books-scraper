@@ -17,7 +17,7 @@ def extract_books(soup):
     books = []
     for article in soup.find_all("article", class_="product_pod"):
         title = article.h3.a["title"]
-        #removes every character that is not a digit or decimal point from the price using regular expression
+        # Removes every character that is not a digit or decimal point from the price using regular expression
         price = float(re.sub(r'[^\d.]', '', article.find("p", class_="price_color").text))
         availability = article.find("p", class_="instock availability")
         stock = "In stock" if availability and "In stock" in availability.text else "Out of stock"
