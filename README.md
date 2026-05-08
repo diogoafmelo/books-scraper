@@ -10,8 +10,13 @@ A simple Python web scraper that extracts book data from [books.toscrape.com](ht
 - Polite scraping: 1‑second delay between requests, proper error handling.
 - Clean price extraction: strips currency symbols and odd characters using regular expressions.
 
+## Screenshots
+
+**books.toscrape.com homepage**
 ![books.toscrape.com homepage](images/books_site.png)
-![ books.csv](images/terminal_output.png)
+
+**Terminal output**
+![head -5 books.csv](images/terminal_output.png)
 
 ## How to Run
 
